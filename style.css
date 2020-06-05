@@ -196,13 +196,14 @@ header {
   font-size:14.4px;
 }
 
-.r, .sas, .python {
+.compteur {
   display: block;
-  margin-left: 0.05cm;
+  margin-left: auto;
   border-radius: 0.5cm;
-  width: 0.7em;
-  height: 0.7em;
-  color: var(--color-boite);
+  padding-left: 0.1cm;
+  padding-right: 0.15cm;
+  background-color: var(--color-gray);
+  color: var(--color-write);
 }
 
 #legende .r, #legende .sas, #legende .python {
