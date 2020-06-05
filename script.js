@@ -3,7 +3,7 @@ $(document).ready(function() {
 // calcul de la position des éléments 
 console.log(document.getElementsByTagName("nav")[0].offsetHeight)
 var hauteurNav = document.getElementsByTagName("nav")[0].offsetHeight + 'px',
-  largeurMenu = document.getElementById("menu").offsetWidth + 'px';
+  largeurMenu = document.getElementById("menuPanel").offsetWidth + 'px';
 console.log(largeurMenu);
 document.getElementById("page").style.setProperty("margin-top", hauteurNav);
 document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
