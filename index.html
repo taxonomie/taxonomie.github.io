@@ -11,13 +11,11 @@
   </head>
   <body>
   	<script type="text/javascript">
-		file = "menu.html";
-	    /* Make an HTTP request using the attribute value as the file name: */
-	    xhttp = new XMLHttpRequest();
-	    xhttp.open("GET", file, true);
-	    xhttp.send();
+  		document.getElementsByTagName("nav")[0].load("header.html")
+  		document.getElementById("menuPanel").load("menu.html")
   	</script>
-    <object type="text/html" data="menu.html"></object>
+  	<nav></nav>
+  	<section id="menuPanel"></section>
     <section id="page">
       <article id="contenu"></article>
     </section>
