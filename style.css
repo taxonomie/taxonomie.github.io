@@ -202,7 +202,6 @@ header {
   border-radius: 0.5cm;
   padding-left: 0.1cm;
   padding-right: 0.15cm;
-  background-color: var(--color-gray);
   color: var(--color-write);
 }
 
@@ -252,12 +251,10 @@ header {
   z-index: 1;
   background-color: var(--color-boite);
   /*box-shadow:-5px 0px 10px rgb(243,243,243);*/
-  padding-left: 4em;
-  padding-right: 4em;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  padding-top: 1em;
+  padding-right: 2em;
 }
 
 article {
@@ -374,7 +371,8 @@ article {
 contenu 
 /*************************/
 #contenu {
-  font-size: 1em;
+  font-size: 1.2em;
+  line-height: 1.4em;
   color: var(--color-write);
   position: relative;
   margin-left: auto;
@@ -495,4 +493,58 @@ contenu
 #contenu td {
   font-size: 0.9em;
   padding: 0.2cm;
+}
+
+#liste {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 2em;
+  width: 100%;
+}
+
+#liste a {
+  display: flex;
+  flex-direction: column;
+  border:solid 1px var(--color-nav);
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 0.2em;
+  width: 45%;
+  min-width: 8cm;
+  flex-grow: 1;
+  margin-left: 1em;
+  margin-top: 1em;
+  color: var(--color-write);
+  text-decoration: none;
+}
+
+#liste ul {
+  display: flex;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: var(--color-write);
+}
+#liste ul li {
+  list-style: none;
+}
+
+#liste ul li:first-child {
+  flex-grow: 1;
+}
+
+#liste h1 {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0px;
+  flex: 1;
+  margin-bottom: 1em;
+}
+
+#liste a:hover {
+  border:solid 1px var(--color-gray);
+}
+
+#liste .invisible {
+  background-color: rgba(0,0,0,0);
+  border:none;
 }
