@@ -506,7 +506,7 @@ contenu
 #liste a {
   display: flex;
   flex-direction: column;
-  border:solid 1px var(--color-nav);
+  border:solid 2px var(--color-nav);
   background-color: rgba(0,0,0,0.1);
   border-radius: 0.2em;
   width: 45%;
@@ -541,7 +541,7 @@ contenu
 }
 
 #liste a:hover {
-  border:solid 1px var(--color-gray);
+  border:solid 2px var(--color-gray);
 }
 
 #liste .invisible {
