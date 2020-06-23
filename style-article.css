@@ -29,7 +29,9 @@ body {
 
 section, header, footer, nav {
 	max-width: 30em;
-	width: 100%;
+	width: 90%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 h1 {
