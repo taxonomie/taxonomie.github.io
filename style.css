@@ -243,12 +243,11 @@ header {
 /*contenu de la page*/
 #page {
   position: absolute;
-  left: 0px;
+  left: 7cm;
   top: 0px;
   right: 0px;
   bottom: 0px;
   flex: 1;
-  z-index: 1;
   background-color: var(--color-boite);
   /*box-shadow:-5px 0px 10px rgb(243,243,243);*/
   display: flex;
@@ -500,13 +499,14 @@ contenu
   flex-direction: row;
   flex-wrap: wrap;
   margin-right: 2em;
+  margin-bottom: 0px;
   width: 100%;
 }
 
 #liste a {
   display: flex;
   flex-direction: column;
-  border:solid 2px var(--color-nav);
+  border:solid 3px var(--color-nav);
   background-color: rgba(0,0,0,0.1);
   border-radius: 0.2em;
   width: 45%;
@@ -541,10 +541,68 @@ contenu
 }
 
 #liste a:hover {
-  border:solid 2px var(--color-gray);
+  border-color: var(--color-gray);
 }
 
 #liste .invisible {
   background-color: rgba(0,0,0,0);
   border:none;
+}
+
+.termine {
+  margin-right: 0.2cm;
+  display: block;
+  margin-left: 0.05cm;
+  border-radius: 0.5cm;
+  width: 0.7em;
+  height: 0.7em;
+  background-color: rgb(52,199,89,0.6);
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+#boutonMenu {
+    background-color: rgba(0,0,0,0.2);
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 2cm;
+    height: 2cm;
+    text-align: center;
+    border-radius: 0.1em;
+    top: 40%;
+    left: 0px;
+    color: rgb(125,125,125);
+  }
+
+  #boutonMenu:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+@media only screen and (max-width: 600px) {
+  #menuPanel {
+    display: none;
+    z-index: 1;
+  }
+  #page {
+    padding-right: 1em;
+    left: 0cm;
+  }
+
+  #menu a {
+    border-bottom: solid 2px var(--color-titre);
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  #menu a:first-child {
+    border-top: solid 2px grey;
+  }
+
+  #boutonMenu {
+    display: flex;
+    z-index: 1;
+  }
 }
