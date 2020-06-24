@@ -155,11 +155,15 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 0.6cm;
-  padding-right: 0.3cm;
+  padding-left: 0.1cm;
+  padding-right: 0.1cm;
   text-transform : capitalize;
   padding-bottom: 0.1cm;
   padding-top: 0.1cm;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: solid 1px rgba(0,0,0,0);
+  border-radius: 0.2em;
 }
 
 #menuPanel h2 {
@@ -281,7 +285,7 @@ article {
   background-color: var(--color-bouton);
   border-radius: 0.3em;
   margin-left: 0.5em;
-  margin-top: 0.5em;
+  margin-top: 0.5em;x
 }
 
 /*boite avec des niveaux*/
@@ -556,30 +560,29 @@ contenu
   border-radius: 0.5cm;
   width: 0.7em;
   height: 0.7em;
-  background-color: rgb(52,199,89,0.6);
+  background-color: var(--color-orange);
   margin-left: 1em;
   margin-bottom: 1em;
 }
 
 #boutonMenu {
-    background-color: rgba(0,0,0,0.2);
-    position: fixed;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 2cm;
-    height: 2cm;
-    text-align: center;
-    border-radius: 0.1em;
-    top: 40%;
-    left: 0px;
-    color: rgb(125,125,125);
-  }
+  background-color: rgba(0,0,0,0.2);
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 2cm;
+  height: 2cm;
+  text-align: center;
+  border-radius: 0.1em;
+  top: 40%;
+  left: 0px;
+  color: rgb(125,125,125);
+}
 
-  #boutonMenu:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-
+#boutonMenu:hover {
+  background-color: rgba(0,0,0,0.8);
+}
 
 @media only screen and (max-width: 600px) {
   #menuPanel {
@@ -605,4 +608,33 @@ contenu
     display: flex;
     z-index: 1;
   }
+}
+
+#liste div {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.2em;
+  background-color: var(--color-yellow);
+  background-color: var(--color-yellow);
+  border-radius: 1em;
+  width: 100%;
+  flex-grow: 1;
+  margin-left: 1em;
+  padding-right: 2em;
+  margin-top: 1em;
+  color: var(--color-write);
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  color: var(--color-red);
+}
+
+#liste div i {
+  width: fit-content;
+  font-size: 200%;
+  margin: 1em;
+}
+
+#liste div  p {
+  font-weight: bold;
 }
