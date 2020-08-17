@@ -9,18 +9,16 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>Taxonomie</title>
   </head>
   <body>
     <section id="menuPanel"><div id="menu">
       <a href="">Tous les résumés<span class="compteur"></span></a>
       <h2>Sources</h2>
-      <a href="">Curiosités animales<span class="compteur"></span></a>
-      <a href="">Sur les épaules de Darwin<span class="compteur"></span></a>
-      <a href="">Documentaires Arte<span class="compteur"></span></a>
-      <h2 style="display: none">Autres</h2>
-      <a href="" style="display: none">A Propos</a>
+      <div href="" id="cua">Curiosités animales<span class="compteur"></span></div>
+      <div href="" id="sed">Sur les épaules de Darwin<span class="compteur"></span></div>
+      <div href="" id="doc">Documentaires Arte<span class="compteur"></span></div>
     </div></section>
     <div id='boutonMenu' href="../index.html"><i class="fas fa-bars"></i></div>
     <section id="page">
@@ -36,35 +34,35 @@
           </ul>
           <h1>Mystérieux lézards, les anolis</h1>
         </a>
-        <a href="curiosites-animales/2020-06-12-supers-sens.html">
+        <a href="curiosites-animales/2020-06-12-supers-sens.html" class="cua">
           <ul>
             <li>2020-06-12</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>Supers sens, anguilles et plantes</h1>
         </a>
-        <a href="curiosites-animales/2020-06-03-animaux-a-armure.html">
+        <a href="curiosites-animales/2020-06-03-animaux-a-armure.html" class="cua">
           <ul>
             <li>2020-06-03</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>Des animaux a armure, le hérisson et le rhinocéros</h1>
         </a>
-        <a href="curiosites-animales/2020-06-02-une-question-de-genre.html">
+        <a href="curiosites-animales/2020-06-02-une-question-de-genre.html" class="cua">
           <ul>
             <li>2020-06-02</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>Une question de genre, l'hyppocampe et la hyene</h1>
         </a>
-        <a href="curiosites-animales/2020-05-30-le-zebre-et-le-papillon.html">
+        <a href="curiosites-animales/2020-05-30-le-zebre-et-le-papillon.html" class="cua">
           <ul>
             <li>2020-05-30</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>Le zébre et le papillon</h1>
         </a>
-        <a href="curiosites-animales/2020-05-28-ornithorynque-et-crapeaux.html">
+        <a href="curiosites-animales/2020-05-28-ornithorynque-et-crapeaux.html" class="cua">
           <ul>
             <li>2020-05-28</li>
             <li class="source">Curiosités animales</li>
@@ -78,154 +76,154 @@
           </ul>
           <h1>Prodigieux colibris</h1>
         </a>
-        <a href="curiosites-animales/2020-05-24-le-narval-et-les-mollusques-a-coquille.html">
+        <a href="curiosites-animales/2020-05-24-le-narval-et-les-mollusques-a-coquille.html" class="cua">
           <ul>
             <li>2020-05-24</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>Le narval et les mollusques a coquille</h1>
         </a>
-        <a href="curiosites-animales/2020-05-22-la-mauvaise-reputation.html">
+        <a href="curiosites-animales/2020-05-22-la-mauvaise-reputation.html" class="cua">
           <ul>
             <li>2020-05-22</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>La mauvaise reputation, le gorille et la chauve-souris</h1>
         </a>
-        <a href="curiosites-animales/2020-05-20-la-girafe-et-le-cameleon.html">
+        <a href="curiosites-animales/2020-05-20-la-girafe-et-le-cameleon.html" class="cua">
           <ul>
             <li>2020-05-20</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>La girafe et le caméleon</h1>
         </a>
-        <a href="curiosites-animales/2020-05-20-des-apparitions-magiques.html">
+        <a href="curiosites-animales/2020-05-20-des-apparitions-magiques.html" class="cua">
           <ul>
             <li>2020-05-20</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>Des apparitions magiques, le papillon et l'hirondelle</h1>
         </a>
-        <a href="curiosites-animales/2020-05-17-animaux-tisserands.html">
+        <a href="curiosites-animales/2020-05-17-animaux-tisserands.html" class="cua">
           <ul>
             <li>2020-05-17</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>Animaux tisserants, l'oiseau et l'araignee</h1>
         </a>
-        <a href="curiosites-animales/2020-05-15-des-incroyables-coquilles-et-carapaces.html">
+        <a href="curiosites-animales/2020-05-15-des-incroyables-coquilles-et-carapaces.html" class="cua">
           <ul>
             <li>2020-05-15</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>Incroyables coquilles et carapaces, tortues et autruches</h1>
         </a>
-        <a href="curiosites-animales/2020-05-13-des-combats-feroces.html">
+        <a href="curiosites-animales/2020-05-13-des-combats-feroces.html" class="cua">
           <ul>
             <li>2020-05-13</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>Des combats féroces, kangourou et combattant du Siam</h1>
         </a>
-        <a href="curiosites-animales/2020-05-11-des-as-du-calcul.html">
+        <a href="curiosites-animales/2020-05-11-des-as-du-calcul.html" class="cua">
           <ul>
             <li>2020-05-11</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>Des as du calcul, chevaux, fourmis et bambous</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-05-09-SED-E157.html">
+        <a href="sur-les-epaules-de-darwin/2020-05-09-SED-E157.html" class="sed">
           <ul>
             <li>2020-05-09</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>Des animaux pharmaciens et médecins (1)</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-05-06-SED-E134.html">
+        <a href="sur-les-epaules-de-darwin/2020-05-06-SED-E134.html" class="sed">
           <ul>
             <li>2020-05-06</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>A la découvert de néandertal en nous… (2)</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-05-04-SED-E051.html">
+        <a href="sur-les-epaules-de-darwin/2020-05-04-SED-E051.html" class="sed">
           <ul>
             <li>2020-05-04</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>Les battements du temps (12) : c'est moi ce n'est pas moi</h1>
         </a>
-        <a href="curiosites-animales/2020-05-01-les-imposteurs.html">
+        <a href="curiosites-animales/2020-05-01-les-imposteurs.html" class="cua">
           <ul>
             <li>2020-05-01</li>
             <li class="source">Curiosités animales</li>
           </ul>
           <h1>Les imposteurs, le coucou et le sphinx tête de mort</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-04-27-SED-E008.html">
+        <a href="sur-les-epaules-de-darwin/2020-04-27-SED-E008.html" class="sed">
           <ul>
             <li>2020-04-27</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>Biodiversité</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-04-26-SED-247.html">
+        <a href="sur-les-epaules-de-darwin/2020-04-26-SED-247.html" class="sed">
           <ul>
             <li>2020-04-26</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>Le mnénotiste</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-04-25-SED-E123.html">
+        <a href="sur-les-epaules-de-darwin/2020-04-25-SED-E123.html" class="sed">
           <ul>
             <li>2020-04-25</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>Apprivoiser la nature (1)</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-04-24-SED-E189.html">
+        <a href="sur-les-epaules-de-darwin/2020-04-24-SED-E189.html" class="sed">
           <ul>
             <li>2020-04-24</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>Abominable mystere</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-04-22-SED-E122.html">
+        <a href="sur-les-epaules-de-darwin/2020-04-22-SED-E122.html" class="sed">
           <ul>
             <li>2020-04-22</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>Le chat qui allait son chemin seul</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-04-21-SED-E104.html">
+        <a href="sur-les-epaules-de-darwin/2020-04-21-SED-E104.html" class="sed">
           <ul>
             <li>2020-04-21</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>L'empreinte du danger</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-04-20-SED-E020.html">
+        <a href="sur-les-epaules-de-darwin/2020-04-20-SED-E020.html" class="sed">
           <ul>
             <li>2020-04-20</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>A la recherche des mysteres de l'hérédité (1)</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-04-19-SED-E018.html">
+        <a href="sur-les-epaules-de-darwin/2020-04-19-SED-E018.html" class="sed">
           <ul>
             <li>2020-04-19</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>Avancées des sciences du vivant, médecine et éthique (2)</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-04-18-SED-E030.html">
+        <a href="sur-les-epaules-de-darwin/2020-04-18-SED-E030.html" class="sed">
           <ul>
             <li>2020-04-18</li>
             <li class="source">Sur les épaules de Darwin</li>
           </ul>
           <h1>A la recherche des mysteres de l'hérédite (2)</h1>
         </a>
-        <a href="sur-les-epaules-de-darwin/2020-04-09-SED-E001.html">
+        <a href="sur-les-epaules-de-darwin/2020-04-09-SED-E001.html" class="sed">
           <ul>
             <li>2020-04-09</li>
             <li class="source">Sur les épaules de Darwin</li>
