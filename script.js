@@ -4,6 +4,9 @@ menu = document.getElementById("menu").getElementsByTagName('div');
 categorie = []
 for (var i = menu.length - 1; i >= 0; i--) {
 	categorie.push(menu[i].id);
+	nbre = document.getElementsByClassName(menu[i].id).length;
+	console.log(document.getElementById(menu[i].id).getElementsByTagName('span')[0]);
+	document.getElementById(menu[i].id).getElementsByTagName('span')[0].innerHTML = nbre;
 }
 
 
