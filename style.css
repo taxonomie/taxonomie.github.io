@@ -522,6 +522,13 @@ contenu
   text-decoration: none;
 }
 
+#liste span {
+  background-color: var(--color-green);
+  width: 100%;
+  height: 0.2em;
+  display: flex;
+}
+
 #liste ul {
   display: flex;
   padding-left: 1em;
