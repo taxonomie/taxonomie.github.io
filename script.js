@@ -8,24 +8,34 @@ for (var i = menu.length - 1; i >= 0; i--) {
 		nbre = document.getElementsByClassName('source').length;
 	} else {
 		nbre = document.getElementsByClassName(menu[i].id).length;
-		console.log(document.getElementById(menu[i].id).getElementsByTagName('span')[0]);
 	};
 	document.getElementById(menu[i].id).getElementsByTagName('span')[0].innerHTML = nbre;
 }
 
 for (var i = categorie.length-1; i >=0; i--) {
 	identifiant = '#' + categorie[i];
-	$(identifiant).click( function() {
-		classe = $(this).attr('id');
-		liste = document.getElementById("liste").getElementsByTagName('a');
-		articles = document.getElementsByClassName(classe);
-		for (i = 0; i<liste.length; i++) {
-			liste[i].style.setProperty("display",'none');
-	 	};
-	 	for (i = 0; i<articles.length; i++) {
-	 		articles[i].style.setProperty("display",'flex');
-	 	};
-	});
+	console.log(i + '> '+ identifiant);
+	if (identifiant == '#ALL') {
+		$(identifiant).click( function() {;
+			articles = document.getElementById("liste").getElementsByTagName('a');
+			console.log(articles.length);
+			for (i = 0; i<articles.length; i++) {
+				articles[i].style.setProperty("display",'flex');
+		 	};
+	 	});
+	} else {
+		$(identifiant).click( function() {
+			classe = $(this).attr('id');
+			liste = document.getElementById("liste").getElementsByTagName('a');
+			articles = document.getElementsByClassName(classe);
+			for (i = 0; i<liste.length; i++) {
+				liste[i].style.setProperty("display",'none');
+		 	};
+		 	for (i = 0; i<articles.length; i++) {
+		 		articles[i].style.setProperty("display",'flex');
+		 	};
+		});
+	};
 }
 
 function hasClassName(elmt, className)
@@ -50,5 +60,32 @@ $("#boutonMenu").click( function() {
 	}
 	
 });
+
+function getWindowWidth() {
+ var windowWidth=0;
+ if (typeof(window.innerWidth)=='number') {
+  windowWidth=window.innerWidth;
+    } else {
+  if (document.documentElement&& document.documentElement.clientWidth) {
+   windowWidth = document.documentElement.clientWidth;
+        } else {
+   if (document.body&&document.body.clientWidth) {
+    windowWidth=document.body.clientWidth;
+            }
+        }
+    }
+ return windowWidth;
+};
+
+function apparitionMenu(evnt){
+	if (getWindowWidth()>601) {
+		apparition = 'flex';
+	} else {
+		apparition = 'none';
+	};
+	document.getElementById('menuPanel').style.setProperty("display",apparition);
+};
+
+window.onresize = apparitionMenu;
 
 });
