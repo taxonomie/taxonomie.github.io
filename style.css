@@ -151,7 +151,7 @@ header {
   width: 7cm;
 }
 
- #menuPanel #legende div, #menuPanel #menu div, #menu a {
+ #menuPanel #legende div, #menuPanel #menu div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -601,13 +601,13 @@ contenu
     left: 0cm;
   }
 
-  #menu a {
+  #menuPanel #menu div {
     border-bottom: solid 2px var(--color-titre);
     padding-top: 1em;
     padding-bottom: 1em;
   }
 
-  #menu a:first-child {
+  #menuPanel #menu div:first-child {
     border-top: solid 2px grey;
   }
 
